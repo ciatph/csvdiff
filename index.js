@@ -11,13 +11,13 @@ csvdiff.setFile('./data/newlist.csv', csvdiff.TYPE_FILE_COMPARE);
 csvdiff.setOutputFilename('results.csv');
 
 // Set the CSV columns to check for in TYPE_FILE_BASE and TYPE_FILE_COMPARE.
-// The CSV files can contain other column names but should have similar column names listed here, in any order
+// The CSV files can contain other column names but should have a similar column name listed here
 csvdiff.setColumnCheck([
     'name'
 ]);
 
-// Print detailed logs
-// csvdiff.log = false;
+// Set csvdiff.log to true to print the "not found" values to screen
+csvdiff.log = false;
 
 csvdiff.readFile(csvdiff.file1, function() {
     csvdiff.readFile(csvdiff.file2, function() {
