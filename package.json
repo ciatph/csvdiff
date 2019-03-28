@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/ciatph/csvdiff/issues"
   },
-  "homepage": "https://github.com/ciatph/csvdiff#readme"
+  "homepage": "https://github.com/ciatph/csvdiff#readme",
+  "devDependencies": {
+    "fast-csv": "^2.4.1",
+    "json2csv": "^4.4.1"
+  }
 }
