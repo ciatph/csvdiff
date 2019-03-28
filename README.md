@@ -19,4 +19,7 @@ These are node modules that are used in this project.
 3. Run `npm install`.
 4. Obtain the input CSV data sets that will be used. Put them in the `/data` directory.
 4. Start debugging using VS Code. Open and edit `index.js` and make sure it contains proper input file names and file paths.
+	- Set the original base data set to search from using `csvdiff.setFile()`
+	- Set data set to look for using `csvdiff.setFile()`
+	- Set the CSV column name header to look for from file1 and file2 using `csvdiff.setColumnCheck()`
 5. Run `npm run diff` from the command line.
